@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+  body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+             background: linear-gradient(to right, #fceabb, #f8b4d9, #e1bee7);
+        }
+        header {
+            background:#fd7d7d;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+              font-family: 'Times New Roman', Times, serif;
+             font-weight: bolder;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar-links a {
+            color: #0d0d0d;
+           font-family: 'Times New Roman', Times, serif;
+           font-weight: bold;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .navbar-links a:hover {
+            background: #b386d1ce;
+        }
+        .navbar-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .navbar-toggle span {
+            height: 3px;
+            width: 25px;
+            background: #dfcddf;
+            margin: 4px 0;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            .navbar-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #e87070;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            .navbar-links.active {
+                display: flex;
+            }
+            .navbar-toggle {
+                display: flex;
+            }
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            margin-top: 0;
+        }
+
+
+/* for  hero section  */
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+     background: linear-gradient(to right, #fceabb, #f8b4d9, #e1bee7);
+  margin: 1rem auto;
+
+}
+
+
+.hero2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+     background: linear-gradient(to right, #fceabb, #f8b4d9, #e1bee7);
+  margin: 1rem auto;
+
+min-height: 100vh;
+ 
+  
+}
+
+
+/* .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    } */
+
+    .hero-content {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+    }
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: #e85b50;
+}
+
+.hero-image {
+  flex: 1;
+  padding: 20px;
+    max-width: 50%; 
+  padding: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 100vh;
+}
+
+.hero-image2 img {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+  object-fit: cover;
+max-height: 25vh;
+
+}
+ 
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1; /* Image goes above text */
+  }
+}
+
+
+.card-image {
+  flex: 1;
+  display: flex;
+  /* Add this property to control the height of the image container */
+  max-height: 200px; /* Adjust this value as needed */
+  overflow: hidden; /* Important if the image is taller than max-height */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%; /* Keep this at 100% to fill the container */
+  object-fit: cover;
+}
+

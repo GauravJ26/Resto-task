@@ -1,0 +1,85 @@
+<!-- currently working in it -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">MyResto</div>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">Order</a>
+                <a href="#">Food</a>
+                <a href="#">Restaurant</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+    
+    <section class="hero">
+  <div class="hero-text">
+    <h1>LOREM IPSUM</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
+      Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut
+      tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+      Sed pulvinar, massa ac porta viverra.
+    </p>
+    <button>Click Me</button>
+  </div>
+  <div class="hero-image">
+    <img src="burger_fries.jpg" alt="Delicious Burger">
+  </div>
+</section>
+
+    
+    <section class="hero2">
+  
+
+
+  <div class="hero-image2">
+    <img src="stagelane.jpg" alt="stagelane" width="200px">
+    <img src="streetwalk.jpg" alt="stagelane" width="200px">
+     <img src="tablefood.jpg" alt="stagelane" width=50%>
+  </div>
+     
+        <div class="hero-text">
+    <h4>LOREM IPSUM</h4>
+    <h2> LOREM IPSUM  SET ADEMIR    </h2>
+    <button>Click to browse </button>
+  </div>
+  
+</section>
+
+
+       
+    </main>
+
+
+    <script>
+        const toggle = document.getElementById('navbar-toggle');
+        const links = document.getElementById('navbar-links');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
